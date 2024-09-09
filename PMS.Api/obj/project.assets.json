@@ -4576,19 +4576,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SanthirajuMerla\\.nuget\\packages\\": {}
+    "C:\\Users\\ShruthiBurka\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Api\\PMS.Api.csproj",
+      "projectUniqueName": "C:\\Users\\ShruthiBurka\\Source\\Repos\\PMS_Project\\PMS.Api\\PMS.Api.csproj",
       "projectName": "PMS.Api",
-      "projectPath": "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Api\\PMS.Api.csproj",
-      "packagesPath": "C:\\Users\\SanthirajuMerla\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Api\\obj\\",
+      "projectPath": "C:\\Users\\ShruthiBurka\\Source\\Repos\\PMS_Project\\PMS.Api\\PMS.Api.csproj",
+      "packagesPath": "C:\\Users\\ShruthiBurka\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ShruthiBurka\\Source\\Repos\\PMS_Project\\PMS.Api\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\SanthirajuMerla\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ShruthiBurka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4603,11 +4608,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Application\\PMS.Application.csproj": {
-              "projectPath": "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Application\\PMS.Application.csproj"
+            "C:\\Users\\ShruthiBurka\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj": {
+              "projectPath": "C:\\Users\\ShruthiBurka\\Source\\Repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj"
             },
-            "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Infra\\PMS.Infra.csproj": {
-              "projectPath": "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Infra\\PMS.Infra.csproj"
+            "C:\\Users\\ShruthiBurka\\Source\\Repos\\PMS_Project\\PMS.Infra\\PMS.Infra.csproj": {
+              "projectPath": "C:\\Users\\ShruthiBurka\\Source\\Repos\\PMS_Project\\PMS.Infra\\PMS.Infra.csproj"
             }
           }
         }
@@ -4657,7 +4662,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
