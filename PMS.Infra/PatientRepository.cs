@@ -23,7 +23,7 @@ namespace PMS.Infra
                 PatientName = "John Doe",
                 PatientEmail = "john.doe@example.com",
                 ContactNumber = "+1234567890",
-                Password = "password123", // Note: Storing passwords in plain text is not secure. This is just for demonstration.
+                Password = "password123",
                 Age = 30,
                 Gender = "Male",
                 Date = DateTime.Now

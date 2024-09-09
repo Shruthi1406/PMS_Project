@@ -17,9 +17,15 @@ namespace PMS.Application.Services
             _repository = repository;
         }
 
+
         public async Task<List<Patient>> GetAllPatients()
         {
             return await _repository.GetAllPatients();
+        }
+
+        public Task<bool> RegisterPatient(Patient patient)
+        {
+            throw new NotImplementedException();
         }
     }
 }

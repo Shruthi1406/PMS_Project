@@ -4141,19 +4141,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rajum\\.nuget\\packages\\": {}
+    "C:\\Users\\SanthirajuMerla\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Infra\\PMS.Infra.csproj",
+      "projectUniqueName": "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Infra\\PMS.Infra.csproj",
       "projectName": "PMS.Infra",
-      "projectPath": "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Infra\\PMS.Infra.csproj",
-      "packagesPath": "C:\\Users\\rajum\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Infra\\obj\\",
+      "projectPath": "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Infra\\PMS.Infra.csproj",
+      "packagesPath": "C:\\Users\\SanthirajuMerla\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\rajum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SanthirajuMerla\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4168,8 +4168,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Application\\PMS.Application.csproj": {
-              "projectPath": "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Application\\PMS.Application.csproj"
+            "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Application\\PMS.Application.csproj": {
+              "projectPath": "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Application\\PMS.Application.csproj"
             }
           }
         }
@@ -4226,7 +4226,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
