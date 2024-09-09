@@ -13,6 +13,7 @@ namespace PMS.Domain.Entities
         public decimal ConsultationFee { get; set; }
         public bool IsAvailable { get; set; }
         public int HospitalId { get; set; }
+        public byte[] Image {  get; set; }
         public int AppointmentId { get; set; }
 
         // Navigation property

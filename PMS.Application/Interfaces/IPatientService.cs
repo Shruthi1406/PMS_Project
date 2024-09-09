@@ -10,5 +10,6 @@ namespace PMS.Application.Interfaces
     public interface IPatientService
     {
         Task<List<Patient>> GetAllPatients();
+        Task<bool> RegisterPatient(Patient patient);
     }
 }

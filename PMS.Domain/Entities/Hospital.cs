@@ -9,9 +9,9 @@ namespace PMS.Domain.Entities
         public string HospitalName { get; set; }
         public string City { get; set; }
         public int Pincode { get; set; }
-
+        public byte[] HospitalImage { get; set; }
         // Navigation property
-        public virtual ICollection<Doctor> Doctors { get; set; } = new HashSet<Doctor>();
+        public virtual ICollection<Doctor> Doctors { get; set; } = new List<Doctor>();
     }
 
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Api\\PMS.Api.csproj": {}
+    "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Api\\PMS.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Api\\PMS.Api.csproj": {
+    "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Api\\PMS.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Api\\PMS.Api.csproj",
+        "projectUniqueName": "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Api\\PMS.Api.csproj",
         "projectName": "PMS.Api",
-        "projectPath": "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Api\\PMS.Api.csproj",
-        "packagesPath": "C:\\Users\\rajum\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Api\\obj\\",
+        "projectPath": "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Api\\PMS.Api.csproj",
+        "packagesPath": "C:\\Users\\SanthirajuMerla\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rajum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SanthirajuMerla\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,11 +29,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Application\\PMS.Application.csproj": {
-                "projectPath": "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Application\\PMS.Application.csproj"
+              "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Application\\PMS.Application.csproj": {
+                "projectPath": "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Application\\PMS.Application.csproj"
               },
-              "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Infra\\PMS.Infra.csproj": {
-                "projectPath": "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Infra\\PMS.Infra.csproj"
+              "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Infra\\PMS.Infra.csproj": {
+                "projectPath": "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Infra\\PMS.Infra.csproj"
               }
             }
           }
@@ -83,21 +83,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Application\\PMS.Application.csproj": {
+    "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Application\\PMS.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Application\\PMS.Application.csproj",
+        "projectUniqueName": "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Application\\PMS.Application.csproj",
         "projectName": "PMS.Application",
-        "projectPath": "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Application\\PMS.Application.csproj",
-        "packagesPath": "C:\\Users\\rajum\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Application\\obj\\",
+        "projectPath": "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Application\\PMS.Application.csproj",
+        "packagesPath": "C:\\Users\\SanthirajuMerla\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rajum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SanthirajuMerla\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -112,8 +112,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Domain\\PMS.Domain.csproj": {
-                "projectPath": "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Domain\\PMS.Domain.csproj"
+              "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Domain\\PMS.Domain.csproj": {
+                "projectPath": "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Domain\\PMS.Domain.csproj"
               }
             }
           }
@@ -148,21 +148,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Domain\\PMS.Domain.csproj": {
+    "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Domain\\PMS.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Domain\\PMS.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Domain\\PMS.Domain.csproj",
         "projectName": "PMS.Domain",
-        "projectPath": "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Domain\\PMS.Domain.csproj",
-        "packagesPath": "C:\\Users\\rajum\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Domain\\obj\\",
+        "projectPath": "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Domain\\PMS.Domain.csproj",
+        "packagesPath": "C:\\Users\\SanthirajuMerla\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rajum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SanthirajuMerla\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -209,21 +209,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Infra\\PMS.Infra.csproj": {
+    "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Infra\\PMS.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Infra\\PMS.Infra.csproj",
+        "projectUniqueName": "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Infra\\PMS.Infra.csproj",
         "projectName": "PMS.Infra",
-        "projectPath": "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Infra\\PMS.Infra.csproj",
-        "packagesPath": "C:\\Users\\rajum\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Infra\\obj\\",
+        "projectPath": "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Infra\\PMS.Infra.csproj",
+        "packagesPath": "C:\\Users\\SanthirajuMerla\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Infra\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rajum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SanthirajuMerla\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -238,8 +238,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Application\\PMS.Application.csproj": {
-                "projectPath": "C:\\Users\\rajum\\source\\repos\\PatientMonitoringSystem\\PMS.Application\\PMS.Application.csproj"
+              "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Application\\PMS.Application.csproj": {
+                "projectPath": "C:\\Users\\SanthirajuMerla\\PMS_App\\PMS.Application\\PMS.Application.csproj"
               }
             }
           }
@@ -296,7 +296,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
