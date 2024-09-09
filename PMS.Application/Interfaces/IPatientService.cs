@@ -1,4 +1,6 @@
 ﻿using PMS.Domain.Entities;
+using PMS.Domain.Entities.Request;
+using PMS.Domain.Entities.Response;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +12,6 @@ namespace PMS.Application.Interfaces
     public interface IPatientService
     {
         Task<List<Patient>> GetAllPatients();
-        Task<bool> RegisterPatient(Patient patient);
+        Task<PatientRes> RegisterPatient(PatientReq patientReq);
     }
 }

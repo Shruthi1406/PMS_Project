@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PMS.Application.Interfaces;
 using PMS.Domain.Entities;
+using PMS.Domain.Entities.Request;
+using PMS.Domain.Entities.Response;
 
 namespace PMS.Api.Controllers
 {
@@ -20,6 +22,12 @@ namespace PMS.Api.Controllers
             var patients= await _patientService.GetAllPatients();
             return Ok(patients);
         }
+        [HttpPost]
+        public async Task<ActionResult<PatientRes>> RegisterPatient(PatientReq patientReq)
+        {
+            var PatientRes = await _patientService.RegisterPatient(patientReq);
 
+            return Ok(PatientRes);
+        }
     }
 }

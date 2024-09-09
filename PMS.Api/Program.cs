@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client;
 using PMS.Application.Interfaces;
 using PMS.Application.Repository_Interfaces;
 using PMS.Application.Services;
@@ -20,6 +21,12 @@ b=>b.MigrationsAssembly("PMS.Api")
 
 builder.Services.AddScoped<IPatientService,PatientService>();
 builder.Services.AddScoped<IPatientRepository,PatientRepository>();
+builder.Services.AddScoped<IDeviceService,DeviceService>();
+builder.Services.AddScoped<IDeviceRepository,DeviceRepository>();
+builder.Services.AddScoped<IVitalSignService,VitalSignService>();
+builder.Services.AddScoped<IVitalSignRepository,VitalSignRepository>();
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

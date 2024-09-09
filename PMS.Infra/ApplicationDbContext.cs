@@ -79,5 +79,9 @@ namespace PMS.Infra
 
 
         }
+        public async Task<int> SaveChangesAsync()
+        {
+            return await base.SaveChangesAsync();
+        }
     }
 }
