@@ -18,8 +18,8 @@ namespace PMS.Infra
         }
         public async Task<VitalSign> CreateVitalSign(VitalSign vitalSign)
         {
-            _applicationDbContext.VitalSigns.Add(vitalSign);
-            _applicationDbContext.SaveChangesAsync();
+            await _applicationDbContext.VitalSigns.AddAsync(vitalSign);
+            await _applicationDbContext.SaveChangesAsync();
             return vitalSign;
         }
     }

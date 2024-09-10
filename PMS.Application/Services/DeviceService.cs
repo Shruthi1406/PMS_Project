@@ -9,9 +9,10 @@ namespace PMS.Application.Services
     {
         public readonly IDeviceRepository _deviceRepository;
         private readonly IPatientRepository _patientRepository;
-        public DeviceService(IDeviceRepository deviceRepository, IPatientService patientService)
+        public DeviceService(IDeviceRepository deviceRepository, IPatientRepository patientRepository)
         {
-            _deviceRepository = deviceRepository; 
+            _deviceRepository = deviceRepository;
+            _patientRepository = patientRepository;
         } 
         public async Task<Device> CreateDevice(string patientEmail)
         {

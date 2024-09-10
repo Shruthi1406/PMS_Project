@@ -10,6 +10,7 @@ namespace PMS.Domain.Entities.Response
     {
         public bool IsSuccess { get; set; }
         public string? ErrorMessage { get; set; }=null;
+        public string? PatientEmail { get; set; } = null;
 
     }
 }
