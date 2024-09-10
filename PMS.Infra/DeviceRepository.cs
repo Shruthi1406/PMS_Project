@@ -25,6 +25,7 @@ namespace PMS.Infra
                 PatientId = patient.PatientId,
                 Patient = patient
             };
+            
             await _applicationDbContext.Devices.AddAsync(device);
             await _applicationDbContext.SaveChangesAsync();
             return device;

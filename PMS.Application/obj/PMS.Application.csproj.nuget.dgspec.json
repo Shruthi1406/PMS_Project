@@ -11,7 +11,7 @@
         "projectName": "PMS.Application",
         "projectPath": "C:\\Users\\SanthirajuMerla\\source\\repos\\PMS_Project\\PMS.Application\\PMS.Application.csproj",
         "packagesPath": "C:\\Users\\SanthirajuMerla\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Application\\obj\\",
+        "outputPath": "C:\\Users\\SanthirajuMerla\\source\\repos\\PMS_Project\\PMS.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SanthirajuMerla\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,7 +82,7 @@
         "projectName": "PMS.Domain",
         "projectPath": "C:\\Users\\SanthirajuMerla\\source\\repos\\PMS_Project\\PMS.Domain\\PMS.Domain.csproj",
         "packagesPath": "C:\\Users\\SanthirajuMerla\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SanthirajuMerla\\Source\\Repos\\PMS_Project\\PMS.Domain\\obj\\",
+        "outputPath": "C:\\Users\\SanthirajuMerla\\source\\repos\\PMS_Project\\PMS.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SanthirajuMerla\\AppData\\Roaming\\NuGet\\NuGet.Config",
