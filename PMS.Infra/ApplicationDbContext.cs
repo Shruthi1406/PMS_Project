@@ -34,9 +34,9 @@ namespace PMS.Infra
 
             // Configure one-to-one relationship between Device and VitalSign
             modelBuilder.Entity<VitalSign>()
-           .HasOne(v => v.Device)  // Each VitalSign has one Device
-           .WithOne()  // Device does not have a corresponding VitalSign property
-           .HasForeignKey<VitalSign>(v => v.DeviceId)  // DeviceId is the foreign key in VitalSign
+           .HasOne(v => v.Device)  
+           .WithOne()  
+           .HasForeignKey<VitalSign>(v => v.DeviceId)  
            .OnDelete(DeleteBehavior.Cascade);
 
             // Configure one-to-many relationship between Doctor and Hospital

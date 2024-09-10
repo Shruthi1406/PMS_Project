@@ -13,5 +13,6 @@ namespace PMS.Application.Interfaces
     {
         Task<List<Patient>> GetAllPatients();
         Task<PatientRes> RegisterPatient(PatientReq patientReq);
+        Task<string> Login(PatientLogin patient);
     }
 }

@@ -1,4 +1,5 @@
-﻿using PMS.Application.Repository_Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using PMS.Application.Repository_Interfaces;
 using PMS.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,12 @@ namespace PMS.Infra
         
         public async Task<List<Patient>> GetAllPatients()
         {
-            return _applicationDbContext.Patients.ToList();
+            return await _applicationDbContext.Patients.ToListAsync();
+        }
+        public async Task<Patient> GetPatientByEmail(string email)
+        {
+            var patient = _applicationDbContext.Patients.FirstOrDefault(p => p.PatientEmail == email);
+            return patient;
         }
         public async Task<bool> CheckIfPatientExisted(Patient patient)
         {

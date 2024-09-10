@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using PMS.Application.Interfaces;
 using PMS.Domain.Entities;
 using PMS.Domain.Entities.Request;
@@ -24,7 +25,9 @@ namespace PMS.Api.Controllers
             _vitalSignService = vitalSignService;
         }
 
+        [Authorize]
         [HttpGet]
+        [Route("GetAllPatients")]
         public async Task<ActionResult<List<Patient>>> GetPatients()
         {
             var patients= await _patientService.GetAllPatients();
@@ -44,6 +47,20 @@ namespace PMS.Api.Controllers
             }
 
             return Ok(PatientRes);
+        }
+        [AllowAnonymous]
+        [HttpPost]
+        [Route("PatientLogin")]
+        public async Task<IActionResult> PatientLogin(PatientLogin patient)
+        {
+            IActionResult response = Unauthorized();
+            var token = await _patientService.Login(patient);
+            if (token != "")
+            {
+                response = Ok(new { token = token });
+                return response;
+            }
+            return response;
         }
     }
 }
