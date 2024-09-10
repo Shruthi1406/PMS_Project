@@ -14,10 +14,7 @@ namespace PMS.Application.Services
     public class PatientService:IPatientService
     {
         private readonly IPatientRepository _repository;
-        public PatientService(
-            IPatientRepository repository,
-            IDeviceService deviceService, 
-            IVitalSignService vitalSignService)
+        public PatientService(IPatientRepository repository)
         {
             _repository = repository;
         }
@@ -51,15 +48,6 @@ namespace PMS.Application.Services
                 return new PatientRes { IsSuccess = true, PatientEmail = newPatient.PatientEmail };
             }
             return new PatientRes { IsSuccess = false, ErrorMessage = "Patient not added" };
-
-            /*if(isPatientAdded)
-            {
-                var device=await _deviceService.CreateDevice(newPatient.PatientEmail);
-                var vitalSign = await _vitalSignService.CreateVitalSign(device.DeviceId);
-                device.VitalSign = vitalSign;
-                return new PatientRes { IsSuccess=true};
-            }
-            return new PatientRes { IsSuccess = false,ErrorMessage="Patient Not Added"};*/
 
 
         }

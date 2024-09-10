@@ -31,6 +31,7 @@ namespace PMS.Api.Controllers
             return Ok(patients);
         }
         [HttpPost]
+        [Route("RegisterPatient")]
         public async Task<ActionResult<PatientRes>> RegisterPatient(PatientReq patientReq)
         {
             var PatientRes = await _patientService.RegisterPatient(patientReq);
@@ -39,7 +40,7 @@ namespace PMS.Api.Controllers
                 var device = await _deviceService.CreateDevice(PatientRes.PatientEmail);
                 var vitalSign = await _vitalSignService.CreateVitalSign(device.DeviceId);
                 device.VitalSign = vitalSign;
-                return new PatientRes { IsSuccess = true };
+                return PatientRes;
             }
 
             return Ok(PatientRes);
