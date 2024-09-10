@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using AutoMapper;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using PMS.Application.Interfaces;
 using PMS.Application.Repository_Interfaces;
@@ -18,16 +19,23 @@ namespace PMS.Application.Services
     {
         private readonly IPatientRepository _repository;
         private IConfiguration _config;
-        public PatientService(IPatientRepository repository, IConfiguration configuration)
+        private readonly IMapper _mapper;
+        public PatientService(
+            IPatientRepository repository,
+            IConfiguration configuration,
+            IMapper mapper)
         {
             _repository = repository;
             _config = configuration;
+            _mapper = mapper;
         }
 
 
-        public async Task<List<Patient>> GetAllPatients()
+        public async Task<List<PatientDtl>> GetAllPatientDtls()
         {
-            return await _repository.GetAllPatients();
+            var PatientList=await _repository.GetAllPatients();
+            var PatientResList = _mapper.Map<List<PatientDtl>>(PatientList);
+            return PatientResList;
         }
 
         public async Task<PatientRes> RegisterPatient(PatientReq patientReq)
@@ -36,17 +44,9 @@ namespace PMS.Application.Services
             {
                 return new PatientRes { IsSuccess=false,ErrorMessage="Required a patient"};
             }
-            var newPatient = new Patient
-            {
-                PatientName = patientReq.FirstName + " " + patientReq.LastName,
-                PatientEmail = patientReq.PatientEmail,
-                Password = patientReq.Password,
-                Age = patientReq.Age,
-                Gender = patientReq.Gender,
-                ContactNumber = patientReq.ContactNumber,
-                DeviceName = patientReq.DeviceName,
-                Date = DateTime.Now,
-            };
+            var newPatient = _mapper.Map<Patient>(patientReq);
+            newPatient.PatientName = patientReq.FirstName + " " + patientReq.LastName;
+            newPatient.Date=DateTime.Now;
             var isPatientAdded=await _repository.RegisterPatient(newPatient);
             if(isPatientAdded)
             {
@@ -58,6 +58,7 @@ namespace PMS.Application.Services
         private async Task<PatientLogin> AuthenticatePatient(PatientLogin patient)
         {
             PatientLogin _patient = null;
+            
             var patientOb = await _repository.GetPatientByEmail(patient.Email);
 
             if (patientOb != null && (patient.Email == patientOb.PatientEmail && patient.Password == patientOb.Password))
@@ -67,7 +68,7 @@ namespace PMS.Application.Services
 
             return _patient;
         }
-        private string GenerateToken(PatientLogin patient)
+        private async Task<string> GenerateToken(PatientLogin patient)
         {
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
@@ -81,10 +82,10 @@ namespace PMS.Application.Services
         public async Task<string> Login(PatientLogin patient)
         {
             var token = "";
-            var _user = AuthenticatePatient(patient);
+            var _user =await AuthenticatePatient(patient);
             if (_user != null)
             {
-                token = GenerateToken(patient);
+                token = await GenerateToken(patient);
             }
             return token;
         }

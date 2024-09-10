@@ -18,7 +18,13 @@ namespace PMS.Application.Services
         {
             var patientList=await _patientRepository.GetAllPatients();
             var patient=patientList.FirstOrDefault(p=>p.PatientEmail==patientEmail);
-            return await _deviceRepository.CreateDevice(patient);
+            if (patient!=null)
+            {
+                var device= await _deviceRepository.CreateDevice(patient);
+                patient.Device=device;
+                return device;
+            }
+            return new Device();
         }
     }
 }

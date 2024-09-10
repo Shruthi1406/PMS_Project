@@ -5,6 +5,7 @@ using Microsoft.IdentityModel.Tokens;
 using PMS.Application.Interfaces;
 using PMS.Application.Repository_Interfaces;
 using PMS.Application.Services;
+using PMS.Domain;
 using PMS.Infra;
 using System.Text;
 
@@ -28,7 +29,7 @@ builder.Services.AddScoped<IDeviceService,DeviceService>();
 builder.Services.AddScoped<IDeviceRepository,DeviceRepository>();
 builder.Services.AddScoped<IVitalSignService,VitalSignService>();
 builder.Services.AddScoped<IVitalSignRepository,VitalSignRepository>();
-
+builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -42,6 +43,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
         };
     });
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

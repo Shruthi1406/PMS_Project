@@ -30,7 +30,7 @@ namespace PMS.Api.Controllers
         [Route("GetAllPatients")]
         public async Task<ActionResult<List<Patient>>> GetPatients()
         {
-            var patients= await _patientService.GetAllPatients();
+            var patients= await _patientService.GetAllPatientDtls();
             return Ok(patients);
         }
         [HttpPost]
@@ -38,7 +38,7 @@ namespace PMS.Api.Controllers
         public async Task<ActionResult<PatientRes>> RegisterPatient(PatientReq patientReq)
         {
             var PatientRes = await _patientService.RegisterPatient(patientReq);
-            if(PatientRes.IsSuccess)
+            if (PatientRes.IsSuccess)
             {
                 var device = await _deviceService.CreateDevice(PatientRes.PatientEmail);
                 var vitalSign = await _vitalSignService.CreateVitalSign(device.DeviceId);
