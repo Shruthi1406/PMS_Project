@@ -15,10 +15,8 @@ namespace PMS.Api.Controllers
         }
 
         [HttpPost]
-        [Route("Schedule/Appointments")]
-
-
-        public async Task<IActionResult> ScheduleAppointmentForPatient([FromBody] Appointment appointment)
+        [Route("schedule")]
+        public async Task<IActionResult> CreateAppointment([FromBody] Appointment appointment)
         {
             if (appointment == null)
             {
@@ -28,8 +26,9 @@ namespace PMS.Api.Controllers
             return Ok(result);
         }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> AppointmentByAppointmentId(int appointmentId)
+        [HttpGet]
+        [Route("{id:int}")]
+        public async Task<IActionResult> RetrieveAppointmentById(int appointmentId)
         {
             var appointment = await _appointmentService.GetAppointment(appointmentId);
             if (appointment == null)
@@ -39,8 +38,9 @@ namespace PMS.Api.Controllers
             return Ok(appointment);
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateAppointment(int id, [FromBody] Appointment appointment)
+        [HttpPut]
+        [Route("{id:int}")]
+        public async Task<IActionResult> ModifyAppointment(int id, [FromBody] Appointment appointment)
         {
             if (id != appointment.AppointmentId)
             {
@@ -56,15 +56,17 @@ namespace PMS.Api.Controllers
             return Ok(updatedAppointment);
         }
 
-        [HttpGet("patient/{patientId}")]
-        public async Task<IActionResult> AppointmentsByPatientId(int patientId)
+        [HttpGet]
+        [Route("patient/{patientId:int}")]
+        public async Task<IActionResult> RetrieveAppointmentsByPatientId(int patientId)
         {
             var appointment=await _appointmentService.GetAppointmentsByPatientId(patientId);
             return Ok(appointment);
         }
 
-        [HttpGet("doctor/{doctorId}")]
-        public async Task<IActionResult> AppointmentsByDoctorId(int doctorId)
+        [HttpGet]
+        [Route("doctor/{doctorId:int}")]
+        public async Task<IActionResult> RetrieveAppointmentsByDoctorId(int doctorId)
         {
             var appointment=await _appointmentService.GetAppointmentsByDoctorId(doctorId);
             return Ok(appointment);

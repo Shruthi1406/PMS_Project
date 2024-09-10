@@ -1,23 +1,7 @@
 [
   {
     "ContainingType": "PMS.Api.Controllers.AppointmentController",
-    "Method": "ScheduleAppointment",
-    "RelativePath": "api/Appointment",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "appointment",
-        "Type": "PMS.Domain.Entities.Appointment",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "PMS.Api.Controllers.AppointmentController",
-    "Method": "AppointmentByAppointmentId",
+    "Method": "RetrieveAppointmentById",
     "RelativePath": "api/Appointment/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -38,7 +22,7 @@
   },
   {
     "ContainingType": "PMS.Api.Controllers.AppointmentController",
-    "Method": "UpdateAppointment",
+    "Method": "ModifyAppointment",
     "RelativePath": "api/Appointment/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -59,7 +43,7 @@
   },
   {
     "ContainingType": "PMS.Api.Controllers.AppointmentController",
-    "Method": "AppointmentsByDoctorId",
+    "Method": "RetrieveAppointmentsByDoctorId",
     "RelativePath": "api/Appointment/doctor/{doctorId}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -75,7 +59,7 @@
   },
   {
     "ContainingType": "PMS.Api.Controllers.AppointmentController",
-    "Method": "AppointmentsByPatientId",
+    "Method": "RetrieveAppointmentsByPatientId",
     "RelativePath": "api/Appointment/patient/{patientId}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -84,6 +68,22 @@
       {
         "Name": "patientId",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PMS.Api.Controllers.AppointmentController",
+    "Method": "CreateAppointment",
+    "RelativePath": "api/Appointment/schedule",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "appointment",
+        "Type": "PMS.Domain.Entities.Appointment",
         "IsRequired": true
       }
     ],
